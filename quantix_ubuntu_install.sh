@@ -128,14 +128,14 @@ function configure_masternode() {
 function addnodes() {
 	echo "Adding nodes..."
 	conffile=/root/.quantixcore/quantix.conf
-	echo -e "\naddnode=51.15.162.24:26668
-			addnode=192.95.33.131:26668
-			addnode=108.61.208.228:26668
-			addnode=119.46.16.214:26668
-			addnode=64.154.38.101:26668
-			addnode=149.28.246.103:26668
-			addnode=107.191.39.20:26668
-			addnode=208.167.245.109:26668\n" 		>> ${conffile}
+	echo -e "\naddnode=51.15.162.24:26668" 		>> ${conffile}
+	echo -e "addnode=192.95.33.131:26668" 		>> ${conffile}
+	echo -e "addnode=108.61.208.228:26668" 		>> ${conffile}
+	echo -e "addnode=119.46.16.214:26668" 		>> ${conffile}
+	echo -e "addnode=64.154.38.101:26668" 		>> ${conffile}
+	echo -e "addnode=149.28.246.103:26668" 		>> ${conffile}
+	echo -e "addnode=107.191.39.20:26668" 		>> ${conffile}
+	echo -e "addnode=208.167.245.109:26668\n" 		>> ${conffile}
 	echo "Done..."
 }
 
