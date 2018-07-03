@@ -57,8 +57,8 @@ function remove_old_files() {
 	sudo rm -rf /root/quantix
 	sudo rm -rf /root/.quantix
 	sudo rm -rf /root/.quantixcore
-    sudo rm -rf quantixd
-    sudo rm -rf quantix-cli
+    	sudo rm -rf quantixd
+    	sudo rm -rf quantix-cli
 	echo "Done..."
 }
 
@@ -66,12 +66,12 @@ function remove_old_files() {
 function download_wallet() {
 	echo "Downloading wallet..."
 	mkdir /root/quantix
-    cd quantix
+    	cd quantix
 	mkdir /root/.quantixcore
 	wget http://node1.finc.it/quantix-cli
-    wget http://node1.finc.it/quantixd
-    chmod +x quantixd
-    chmod +x quantix-cli
+   	wget http://node1.finc.it/quantixd
+    	chmod +x quantixd
+    	chmod +x quantix-cli
 	echo "Done..."
 }
 
