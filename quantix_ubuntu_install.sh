@@ -34,7 +34,7 @@ function install_packages() {
 	git nano python-virtualenv pwgen virtualenv \
 	pkg-config libssl-dev libevent-dev bsdmainutils software-properties-common \
 	libboost-all-dev libminiupnpc-dev libdb4.8-dev libdb4.8++-dev &>> ${SCRIPT_LOGFILE}
-	apt-get install libzmq3-dev &>> ${SCRIPT_LOGFILE}
+	apt-get -y install libzmq3-dev &>> ${SCRIPT_LOGFILE}
 	echo "Install done..."
 }
 
