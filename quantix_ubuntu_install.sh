@@ -27,7 +27,7 @@ function print_info() {
 
 
 function install_packages() {
-	echo "Install packages..."
+	echo "Install packages... If the server is brand new, this could take some time."
 	add-apt-repository -yu ppa:bitcoin/bitcoin  &>> ${SCRIPT_LOGFILE}
 	apt-get -y update &>> ${SCRIPT_LOGFILE}
 	apt-get -y install wget make automake autoconf build-essential libtool autotools-dev \
